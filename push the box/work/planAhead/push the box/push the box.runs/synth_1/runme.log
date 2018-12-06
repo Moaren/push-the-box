@@ -1,0 +1,939 @@
+
+*** Running xst
+    with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
+
+Reading design: mojo_top_0.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/shifter_31.v" into library work
+Parsing module <shifter_31>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_27.v" into library work
+Parsing module <counter_27>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_26.v" into library work
+Parsing module <counter_26>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/comparator_30.v" into library work
+Parsing module <comparator_30>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/boolean_29.v" into library work
+Parsing module <boolean_29>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/adder_28.v" into library work
+Parsing module <adder_28>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/timer_16.v" into library work
+Parsing module <timer_16>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/pipeline_21.v" into library work
+Parsing module <pipeline_21>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/number_15.v" into library work
+Parsing module <number_15>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/map_14.v" into library work
+Parsing module <map_14>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_20.v" into library work
+Parsing module <counter_20>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_19.v" into library work
+Parsing module <counter_19>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/animation_17.v" into library work
+Parsing module <animation_17>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/alu_18.v" into library work
+Parsing module <alu_18>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/reset_conditioner_3.v" into library work
+Parsing module <reset_conditioner_3>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" into library work
+Parsing module <logic_1>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/edge_detector_9.v" into library work
+Parsing module <edge_detector_9>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/display_2.v" into library work
+Parsing module <display_2>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/button_conditioner_4.v" into library work
+Parsing module <button_conditioner_4>.
+Analyzing Verilog file "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/mojo_top_0.v" into library work
+Parsing module <mojo_top_0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mojo_top_0>.
+
+Elaborating module <logic_1>.
+
+Elaborating module <map_14>.
+WARNING:HDLCompiler:1127 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 36: Assignment to M_map_out ignored, since the identifier is never used
+
+Elaborating module <number_15>.
+
+Elaborating module <timer_16>.
+
+Elaborating module <animation_17>.
+
+Elaborating module <counter_26>.
+
+Elaborating module <counter_27>.
+WARNING:HDLCompiler:413 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/animation_17.v" Line 42: Result of 33-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/animation_17.v" Line 43: Result of 29-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <alu_18>.
+
+Elaborating module <adder_28>.
+
+Elaborating module <boolean_29>.
+
+Elaborating module <comparator_30>.
+
+Elaborating module <shifter_31>.
+WARNING:HDLCompiler:1127 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 86: Assignment to M_alu_z ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 87: Assignment to M_alu_v ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 88: Assignment to M_alu_n ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 89: Assignment to M_alu_overflow ignored, since the identifier is never used
+
+Elaborating module <counter_19>.
+WARNING:HDLCompiler:413 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 171: Result of 16-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" Line 293: Result of 16-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <display_2>.
+
+Elaborating module <counter_20>.
+
+Elaborating module <reset_conditioner_3>.
+
+Elaborating module <button_conditioner_4>.
+
+Elaborating module <pipeline_21>.
+
+Elaborating module <edge_detector_9>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mojo_top_0>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/mojo_top_0.v".
+WARNING:Xst:647 - Input <cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_ss> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spi_sck> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <avr_rx_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit tristate buffer for signal <spi_miso> created at line 157
+    Found 1-bit tristate buffer for signal <spi_channel<3>> created at line 157
+    Found 1-bit tristate buffer for signal <spi_channel<2>> created at line 157
+    Found 1-bit tristate buffer for signal <spi_channel<1>> created at line 157
+    Found 1-bit tristate buffer for signal <spi_channel<0>> created at line 157
+    Found 1-bit tristate buffer for signal <avr_rx> created at line 157
+    Summary:
+	inferred   6 Tristate(s).
+Unit <mojo_top_0> synthesized.
+
+Synthesizing Unit <logic_1>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v".
+INFO:Xst:3210 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" line 34: Output port <out> of the instance <map> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" line 81: Output port <z> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" line 81: Output port <v> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" line 81: Output port <n> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/logic_1.v" line 81: Output port <overflow> of the instance <alu> is unconnected or connected to loadless signal.
+    Found 3-bit register for signal <M_state_q>.
+    Found 3-bit register for signal <M_now_position_col_q>.
+    Found 64-bit register for signal <M_box_q>.
+    Found 3-bit register for signal <M_now_position_row_q>.
+    Found 64-bit register for signal <M_destinations_q>.
+    Found 64-bit register for signal <M_check_result_q>.
+    Found 64-bit register for signal <M_map_boundary_q>.
+    Found 3-bit register for signal <M_round_number_q>.
+    Found finite state machine <FSM_0> for signal <M_state_q>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 12                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <PWR_2_o_M_map_start_row[2]_sub_27_OUT> created at line 206.
+    Found 3-bit subtractor for signal <PWR_2_o_M_map_start_col[2]_sub_28_OUT> created at line 207.
+    Found 3-bit subtractor for signal <M_now_position_row_q[2]_GND_2_o_sub_88_OUT> created at line 229.
+    Found 4-bit subtractor for signal <GND_2_o_GND_2_o_sub_94_OUT> created at line 230.
+    Found 4-bit subtractor for signal <GND_2_o_GND_2_o_sub_106_OUT> created at line 235.
+    Found 3-bit subtractor for signal <M_now_position_col_q[2]_GND_2_o_sub_135_OUT> created at line 246.
+    Found 3-bit subtractor for signal <M_now_position_row_q[2]_GND_2_o_sub_151_OUT> created at line 252.
+    Found 4-bit subtractor for signal <GND_2_o_GND_2_o_sub_153_OUT> created at line 252.
+    Found 4-bit subtractor for signal <GND_2_o_GND_2_o_sub_217_OUT> created at line 274.
+    Found 3-bit adder for signal <M_round_number_q[2]_GND_2_o_add_12_OUT> created at line 182.
+    Found 7-bit adder for signal <n1266> created at line 218.
+    Found 32-bit adder for signal <n1283> created at line 230.
+    Found 32-bit adder for signal <n1286> created at line 235.
+    Found 4-bit adder for signal <n1581[3:0]> created at line 240.
+    Found 7-bit adder for signal <n1291> created at line 240.
+    Found 32-bit adder for signal <n1307> created at line 252.
+    Found 4-bit adder for signal <n1589[3:0]> created at line 264.
+    Found 6-bit adder for signal <M_now_position_row_q[2]_GND_2_o_add_188_OUT> created at line 264.
+    Found 4-bit adder for signal <n1594[3:0]> created at line 269.
+    Found 4-bit adder for signal <n1596[3:0]> created at line 269.
+    Found 6-bit adder for signal <M_now_position_row_q[2]_GND_2_o_add_200_OUT> created at line 269.
+    Found 6-bit adder for signal <M_now_position_row_q[2]_GND_2_o_add_214_OUT> created at line 273.
+    Found 32-bit adder for signal <n1334> created at line 274.
+    Found 7-bit adder for signal <n1501> created at line 291.
+    Found 127-bit shifter logical right for signal <n1264> created at line 212
+    Found 127-bit shifter logical right for signal <n1265> created at line 213
+    Found 127-bit shifter logical right for signal <n1267> created at line 218
+    Found 127-bit shifter logical right for signal <n1268> created at line 218
+    Found 127-bit shifter logical right for signal <n1281> created at line 229
+    Found 127-bit shifter logical right for signal <n1284> created at line 230
+    Found 127-bit shifter logical right for signal <n1287> created at line 235
+    Found 127-bit shifter logical right for signal <n1288> created at line 235
+    Found 127-bit shifter logical right for signal <n1303> created at line 246
+    Found 127-bit shifter logical right for signal <n1304> created at line 247
+    Found 127-bit shifter logical right for signal <n1308> created at line 252
+    Found 127-bit shifter logical right for signal <n1309> created at line 252
+    Found 127-bit shifter logical right for signal <n1321> created at line 263
+    Found 127-bit shifter logical right for signal <n1324> created at line 264
+    Found 127-bit shifter logical right for signal <n1328> created at line 269
+    Found 127-bit shifter logical right for signal <n1329> created at line 269
+    Found 127-bit shifter logical right for signal <n1362> created at line 291
+    Found 127-bit shifter logical right for signal <n1363> created at line 292
+    Found 16-bit 3-to-1 multiplexer for signal <_n2612> created at line 78.
+    Found 3-bit comparator lessequal for signal <n0043> created at line 212
+    Found 3-bit comparator lessequal for signal <n0050> created at line 218
+    Found 3-bit comparator lessequal for signal <n0263> created at line 229
+    Found 3-bit comparator lessequal for signal <n0272> created at line 235
+    Found 3-bit comparator lessequal for signal <n0488> created at line 246
+    Found 3-bit comparator lessequal for signal <n0496> created at line 252
+    Found 3-bit comparator lessequal for signal <n0709> created at line 263
+    Found 3-bit comparator lessequal for signal <n0719> created at line 269
+    Summary:
+	inferred  24 Adder/Subtractor(s).
+	inferred 265 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred 1994 Multiplexer(s).
+	inferred  18 Combinational logic shifter(s).
+	inferred   1 Finite State Machine(s).
+Unit <logic_1> synthesized.
+
+Synthesizing Unit <map_14>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/map_14.v".
+    Found 8x198-bit Read Only RAM for signal <_n0024>
+    Summary:
+	inferred   1 RAM(s).
+Unit <map_14> synthesized.
+
+Synthesizing Unit <number_15>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/number_15.v".
+    Found 8x64-bit Read Only RAM for signal <number_map>
+    Summary:
+	inferred   1 RAM(s).
+Unit <number_15> synthesized.
+
+Synthesizing Unit <timer_16>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/timer_16.v".
+    Found 8-bit register for signal <M_totalTime_q>.
+    Found 23-bit register for signal <M_counter_q>.
+    Found 23-bit adder for signal <M_counter_q[22]_GND_5_o_add_0_OUT> created at line 33.
+    Found 8-bit adder for signal <M_totalTime_q[7]_GND_5_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <timer_16> synthesized.
+
+Synthesizing Unit <animation_17>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/animation_17.v".
+    Found 6-bit subtractor for signal <PWR_6_o_GND_6_o_sub_58_OUT> created at line 42.
+    Found 5-bit subtractor for signal <PWR_6_o_M_counter_win_value[4]_sub_62_OUT> created at line 43.
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_0_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_2_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <GND_6_o_M_counter_win_value[4]_shift_right_4_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_6_OUT> created at line 43
+    Found 29-bit shifter logical right for signal <GND_6_o_M_counter_win_value[4]_shift_right_12_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_14_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_16_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_18_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <PWR_6_o_M_counter_win_value[4]_shift_right_20_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <PWR_6_o_PWR_6_o_shift_left_22_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_24_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_26_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <PWR_6_o_M_counter_win_value[4]_shift_right_28_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <PWR_6_o_PWR_6_o_shift_left_30_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_32_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_34_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <PWR_6_o_M_counter_win_value[4]_shift_right_36_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <PWR_6_o_PWR_6_o_shift_left_38_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_40_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_42_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <GND_6_o_M_counter_win_value[4]_shift_right_44_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_46_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_48_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_50_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <GND_6_o_M_counter_win_value[4]_shift_right_52_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_54_OUT> created at line 43
+    Found 33-bit shifter logical right for signal <GND_6_o_M_counter_start_value[4]_shift_right_56_OUT> created at line 42
+    Found 33-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_58_OUT> created at line 42
+    Found 29-bit shifter logical right for signal <GND_6_o_M_counter_win_value[4]_shift_right_60_OUT> created at line 43
+    Found 29-bit shifter logical left for signal <GND_6_o_PWR_6_o_shift_left_62_OUT> created at line 43
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  30 Combinational logic shifter(s).
+Unit <animation_17> synthesized.
+
+Synthesizing Unit <counter_26>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_26.v".
+    Found 29-bit register for signal <M_ctr_q>.
+    Found 29-bit adder for signal <M_ctr_d> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <counter_26> synthesized.
+
+Synthesizing Unit <counter_27>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_27.v".
+    Found 29-bit register for signal <M_ctr_q>.
+    Found 29-bit adder for signal <M_ctr_q[28]_GND_8_o_add_0_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+Unit <counter_27> synthesized.
+
+Synthesizing Unit <alu_18>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/alu_18.v".
+    Found 16-bit 4-to-1 multiplexer for signal <out> created at line 94.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu_18> synthesized.
+
+Synthesizing Unit <adder_28>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/adder_28.v".
+WARNING:Xst:647 - Input <alufn<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit subtractor for signal <sub> created at line 34.
+    Found 16-bit subtractor for signal <a[15]_a[15]_sub_6_OUT> created at line 40.
+    Found 16-bit adder for signal <a[15]_b[15]_add_0_OUT> created at line 31.
+    Found 16x16-bit multiplier for signal <n0030> created at line 37.
+    Found 16x16-bit multiplier for signal <n0032> created at line 40.
+    Found 16-bit 4-to-1 multiplexer for signal <temp_out> created at line 29.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   6 Multiplexer(s).
+Unit <adder_28> synthesized.
+
+Synthesizing Unit <div_16u_16u>.
+    Related source file is "".
+    Found 32-bit adder for signal <n0956> created at line 0.
+    Found 32-bit adder for signal <GND_12_o_b[15]_add_1_OUT> created at line 0.
+    Found 31-bit adder for signal <n0960> created at line 0.
+    Found 31-bit adder for signal <GND_12_o_b[15]_add_3_OUT> created at line 0.
+    Found 30-bit adder for signal <n0964> created at line 0.
+    Found 30-bit adder for signal <GND_12_o_b[15]_add_5_OUT> created at line 0.
+    Found 29-bit adder for signal <n0968> created at line 0.
+    Found 29-bit adder for signal <GND_12_o_b[15]_add_7_OUT> created at line 0.
+    Found 28-bit adder for signal <n0972> created at line 0.
+    Found 28-bit adder for signal <GND_12_o_b[15]_add_9_OUT> created at line 0.
+    Found 27-bit adder for signal <n0976> created at line 0.
+    Found 27-bit adder for signal <GND_12_o_b[15]_add_11_OUT> created at line 0.
+    Found 26-bit adder for signal <n0980> created at line 0.
+    Found 26-bit adder for signal <GND_12_o_b[15]_add_13_OUT> created at line 0.
+    Found 25-bit adder for signal <n0984> created at line 0.
+    Found 25-bit adder for signal <GND_12_o_b[15]_add_15_OUT> created at line 0.
+    Found 24-bit adder for signal <n0988> created at line 0.
+    Found 24-bit adder for signal <GND_12_o_b[15]_add_17_OUT> created at line 0.
+    Found 23-bit adder for signal <n0992> created at line 0.
+    Found 23-bit adder for signal <GND_12_o_b[15]_add_19_OUT> created at line 0.
+    Found 22-bit adder for signal <n0996> created at line 0.
+    Found 22-bit adder for signal <GND_12_o_b[15]_add_21_OUT> created at line 0.
+    Found 21-bit adder for signal <n1000> created at line 0.
+    Found 21-bit adder for signal <GND_12_o_b[15]_add_23_OUT> created at line 0.
+    Found 20-bit adder for signal <n1004> created at line 0.
+    Found 20-bit adder for signal <GND_12_o_b[15]_add_25_OUT> created at line 0.
+    Found 19-bit adder for signal <n1008> created at line 0.
+    Found 19-bit adder for signal <GND_12_o_b[15]_add_27_OUT> created at line 0.
+    Found 18-bit adder for signal <n1012> created at line 0.
+    Found 18-bit adder for signal <GND_12_o_b[15]_add_29_OUT> created at line 0.
+    Found 17-bit adder for signal <n1016> created at line 0.
+    Found 17-bit adder for signal <GND_12_o_b[15]_add_31_OUT> created at line 0.
+    Found 32-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 241 Multiplexer(s).
+Unit <div_16u_16u> synthesized.
+
+Synthesizing Unit <boolean_29>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/boolean_29.v".
+WARNING:Xst:647 - Input <alufn<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+Unit <boolean_29> synthesized.
+
+Synthesizing Unit <comparator_30>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/comparator_30.v".
+WARNING:Xst:647 - Input <alufn<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <alufn<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 4-to-1 multiplexer for signal <out> created at line 19.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <comparator_30> synthesized.
+
+Synthesizing Unit <shifter_31>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/shifter_31.v".
+WARNING:Xst:647 - Input <alufn<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit shifter logical left for signal <a[15]_b[15]_shift_left_0_OUT> created at line 20
+    Found 16-bit shifter logical right for signal <a[15]_b[15]_shift_right_1_OUT> created at line 23
+    Found 16-bit shifter arithmetic right for signal <a[15]_b[15]_shift_right_2_OUT> created at line 26
+    Found 16-bit 4-to-1 multiplexer for signal <out> created at line 18.
+    Summary:
+	inferred   4 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <shifter_31> synthesized.
+
+Synthesizing Unit <counter_19>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_19.v".
+    Found 3-bit register for signal <M_ctr_q>.
+    Found 3-bit adder for signal <M_ctr_q[2]_GND_18_o_add_0_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <counter_19> synthesized.
+
+Synthesizing Unit <display_2>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/display_2.v".
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_9_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_21_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_33_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_45_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_57_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_69_OUT> created at line 43.
+    Found 6-bit adder for signal <M_counter_r_value[2]_GND_19_o_add_81_OUT> created at line 43.
+    Found 127-bit shifter logical right for signal <n0096> created at line 43
+    Found 127-bit shifter logical right for signal <n0097> created at line 44
+    Found 127-bit shifter logical right for signal <n0098> created at line 45
+    Found 127-bit shifter logical right for signal <n0099> created at line 48
+    Found 127-bit shifter logical right for signal <n0101> created at line 43
+    Found 127-bit shifter logical right for signal <n0102> created at line 44
+    Found 127-bit shifter logical right for signal <n0103> created at line 45
+    Found 127-bit shifter logical right for signal <n0104> created at line 48
+    Found 127-bit shifter logical right for signal <n0106> created at line 43
+    Found 127-bit shifter logical right for signal <n0107> created at line 44
+    Found 127-bit shifter logical right for signal <n0108> created at line 45
+    Found 127-bit shifter logical right for signal <n0109> created at line 48
+    Found 127-bit shifter logical right for signal <n0111> created at line 43
+    Found 127-bit shifter logical right for signal <n0112> created at line 44
+    Found 127-bit shifter logical right for signal <n0113> created at line 45
+    Found 127-bit shifter logical right for signal <n0114> created at line 48
+    Found 127-bit shifter logical right for signal <n0116> created at line 43
+    Found 127-bit shifter logical right for signal <n0117> created at line 44
+    Found 127-bit shifter logical right for signal <n0118> created at line 45
+    Found 127-bit shifter logical right for signal <n0119> created at line 48
+    Found 127-bit shifter logical right for signal <n0121> created at line 43
+    Found 127-bit shifter logical right for signal <n0122> created at line 44
+    Found 127-bit shifter logical right for signal <n0123> created at line 45
+    Found 127-bit shifter logical right for signal <n0124> created at line 48
+    Found 127-bit shifter logical right for signal <n0126> created at line 43
+    Found 127-bit shifter logical right for signal <n0127> created at line 44
+    Found 127-bit shifter logical right for signal <n0128> created at line 45
+    Found 127-bit shifter logical right for signal <n0129> created at line 48
+    Found 127-bit shifter logical right for signal <n0131> created at line 43
+    Found 127-bit shifter logical right for signal <n0132> created at line 44
+    Found 127-bit shifter logical right for signal <n0133> created at line 45
+    Found 127-bit shifter logical right for signal <n0134> created at line 48
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  16 Multiplexer(s).
+	inferred  32 Combinational logic shifter(s).
+Unit <display_2> synthesized.
+
+Synthesizing Unit <counter_20>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/counter_20.v".
+    Found 19-bit register for signal <M_ctr_q>.
+    Found 19-bit adder for signal <M_ctr_q[18]_GND_20_o_add_0_OUT> created at line 35.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+Unit <counter_20> synthesized.
+
+Synthesizing Unit <reset_conditioner_3>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/reset_conditioner_3.v".
+    Found 4-bit register for signal <M_stage_q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reset_conditioner_3> synthesized.
+
+Synthesizing Unit <button_conditioner_4>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/button_conditioner_4.v".
+    Found 20-bit register for signal <M_ctr_q>.
+    Found 20-bit adder for signal <M_ctr_q[19]_GND_22_o_add_2_OUT> created at line 39.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <button_conditioner_4> synthesized.
+
+Synthesizing Unit <pipeline_21>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/pipeline_21.v".
+    Found 2-bit register for signal <M_pipe_q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pipeline_21> synthesized.
+
+Synthesizing Unit <edge_detector_9>.
+    Related source file is "C:/Users/LENOVO/Desktop/push the box/work/planAhead/push the box/push the box.srcs/sources_1/imports/verilog/edge_detector_9.v".
+    Found 1-bit register for signal <M_last_q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <edge_detector_9> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x198-bit single-port Read Only RAM                   : 1
+ 8x64-bit single-port Read Only RAM                    : 1
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 78
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 2
+ 19-bit adder                                          : 3
+ 20-bit adder                                          : 7
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 2
+ 23-bit adder                                          : 3
+ 24-bit adder                                          : 2
+ 25-bit adder                                          : 2
+ 26-bit adder                                          : 2
+ 27-bit adder                                          : 2
+ 28-bit adder                                          : 2
+ 29-bit adder                                          : 4
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 5
+ 30-bit adder                                          : 2
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 4
+ 4-bit subtractor                                      : 4
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 10
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 1
+# Registers                                            : 29
+ 1-bit register                                        : 5
+ 19-bit register                                       : 1
+ 2-bit register                                        : 5
+ 20-bit register                                       : 5
+ 23-bit register                                       : 1
+ 29-bit register                                       : 2
+ 3-bit register                                        : 4
+ 4-bit register                                        : 1
+ 64-bit register                                       : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 25
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 3-bit comparator lessequal                            : 8
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2264
+ 1-bit 2-to-1 multiplexer                              : 2119
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 68
+ 16-bit 3-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+ 23-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 28
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+ 64-bit 2-to-1 multiplexer                             : 32
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 83
+ 127-bit shifter logical right                         : 50
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+ 29-bit shifter logical left                           : 8
+ 29-bit shifter logical right                          : 8
+ 33-bit shifter logical left                           : 7
+ 33-bit shifter logical right                          : 7
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 6
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <button_conditioner_4>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <button_conditioner_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_19>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_19> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_20>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_20> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_26>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_26> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter_27>.
+The following registers are absorbed into counter <M_ctr_q>: 1 register on signal <M_ctr_q>.
+Unit <counter_27> synthesized (advanced).
+
+Synthesizing (advanced) Unit <map_14>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0024> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 198-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <round_number>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <map_14> synthesized (advanced).
+
+Synthesizing (advanced) Unit <number_15>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_number_map> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 64-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <output_number> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <number_map>    |          |
+    -----------------------------------------------------------------------
+Unit <number_15> synthesized (advanced).
+
+Synthesizing (advanced) Unit <timer_16>.
+The following registers are absorbed into counter <M_counter_q>: 1 register on signal <M_counter_q>.
+The following registers are absorbed into counter <M_totalTime_q>: 1 register on signal <M_totalTime_q>.
+Unit <timer_16> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 8x198-bit single-port distributed Read Only RAM       : 1
+ 8x64-bit single-port distributed Read Only RAM        : 1
+# Multipliers                                          : 2
+ 16x16-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 51
+ 16-bit adder carry in                                 : 16
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+ 3-bit adder                                           : 3
+ 3-bit subtractor                                      : 7
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 2
+ 5-bit subtractor                                      : 1
+ 6-bit adder                                           : 16
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 1
+# Counters                                             : 11
+ 19-bit up counter                                     : 1
+ 20-bit up counter                                     : 5
+ 23-bit up counter                                     : 1
+ 29-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 284
+ Flip-Flops                                            : 284
+# Comparators                                          : 25
+ 16-bit comparator lessequal                           : 1
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 3-bit comparator lessequal                            : 8
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 2263
+ 1-bit 2-to-1 multiplexer                              : 2119
+ 1-bit 4-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 68
+ 16-bit 3-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 28
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+ 64-bit 2-to-1 multiplexer                             : 32
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 83
+ 127-bit shifter logical right                         : 50
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+ 29-bit shifter logical left                           : 8
+ 29-bit shifter logical right                          : 8
+ 33-bit shifter logical left                           : 7
+ 33-bit shifter logical right                          : 7
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <logic/FSM_0> on signal <M_state_q[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 101   | 000010
+ 001   | 000100
+ 100   | 001000
+ 011   | 010000
+ 010   | 100000
+-------------------
+WARNING:Xst:1293 - FF/Latch <M_destinations_q_38> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_39> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_40> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_41> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_42> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_43> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_44> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_46> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_47> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_48> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_49> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_53> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_54> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_55> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_56> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_57> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_58> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_59> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_60> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_61> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_62> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_63> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_boundary_q_28> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_boundary_q_36> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_boundary_q_52> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_boundary_q_56> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_map_boundary_q_63> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_0> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_1> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_2> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_3> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_4> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_5> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_6> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_7> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_8> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_9> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_10> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_12> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_15> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_16> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_17> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_18> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_19> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_23> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_24> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_25> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_26> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_28> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_31> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_32> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_34> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_35> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_36> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <M_destinations_q_37> has a constant value of 0 in block <logic_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <alu/add/a[15]_b[15]_div_3> of block <div_16u_16u> are unconnected in block <logic_1>. Underlying logic will be removed.
+WARNING:Xst:2677 - Node <alu/add/Mmult_n0032> of sequential type is unconnected in block <logic_1>.
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_13> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_30> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_0> in Unit <logic_1> is equivalent to the following 2 FFs/Latches, which will be removed : <M_map_boundary_q_27> <M_map_boundary_q_29> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_38> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_51> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_1> in Unit <logic_1> is equivalent to the following 4 FFs/Latches, which will be removed : <M_map_boundary_q_2> <M_map_boundary_q_3> <M_map_boundary_q_4> <M_map_boundary_q_5> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_23> in Unit <logic_1> is equivalent to the following 5 FFs/Latches, which will be removed : <M_map_boundary_q_31> <M_map_boundary_q_39> <M_map_boundary_q_59> <M_map_boundary_q_60> <M_map_boundary_q_61> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_14> in Unit <logic_1> is equivalent to the following 3 FFs/Latches, which will be removed : <M_map_boundary_q_6> <M_map_boundary_q_7> <M_map_boundary_q_35> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_13> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_14> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_45> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_44> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_20> in Unit <logic_1> is equivalent to the following 5 FFs/Latches, which will be removed : <M_destinations_q_21> <M_destinations_q_50> <M_destinations_q_51> <M_map_boundary_q_11> <M_map_boundary_q_57> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_24> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_32> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_30> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_8> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_11> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_43> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_15> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_62> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_20> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_53> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_52> in Unit <logic_1> is equivalent to the following 2 FFs/Latches, which will be removed : <M_map_boundary_q_10> <M_map_boundary_q_12> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_27> in Unit <logic_1> is equivalent to the following 2 FFs/Latches, which will be removed : <M_map_boundary_q_19> <M_map_boundary_q_48> 
+INFO:Xst:2261 - The FF/Latch <M_destinations_q_33> in Unit <logic_1> is equivalent to the following 2 FFs/Latches, which will be removed : <M_map_boundary_q_42> <M_map_boundary_q_45> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_16> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_37> 
+INFO:Xst:2261 - The FF/Latch <M_map_boundary_q_21> in Unit <logic_1> is equivalent to the following FF/Latch, which will be removed : <M_map_boundary_q_22> 
+
+Optimizing unit <mojo_top_0> ...
+
+Optimizing unit <logic_1> ...
+
+Optimizing unit <div_16u_16u> ...
+
+Optimizing unit <display_2> ...
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_1> in Unit <mojo_top_0> is equivalent to the following 3 FFs/Latches, which will be removed : <logic/counter_check/M_ctr_q_1> <logic/animation/counter_win/M_ctr_q_1> <display/counter_r/M_ctr_q_1> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_2> in Unit <mojo_top_0> is equivalent to the following 3 FFs/Latches, which will be removed : <logic/counter_check/M_ctr_q_2> <logic/animation/counter_win/M_ctr_q_2> <display/counter_r/M_ctr_q_2> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_3> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_3> <display/counter_r/M_ctr_q_3> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_4> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_4> <display/counter_r/M_ctr_q_4> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_5> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_5> <display/counter_r/M_ctr_q_5> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_6> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_6> <display/counter_r/M_ctr_q_6> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_7> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_7> <display/counter_r/M_ctr_q_7> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_8> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_8> <display/counter_r/M_ctr_q_8> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_9> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_9> <display/counter_r/M_ctr_q_9> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_10> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_10> <display/counter_r/M_ctr_q_10> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_11> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_11> <display/counter_r/M_ctr_q_11> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_12> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_12> <display/counter_r/M_ctr_q_12> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_13> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_13> <display/counter_r/M_ctr_q_13> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_14> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_14> <display/counter_r/M_ctr_q_14> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_20> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <logic/animation/counter_win/M_ctr_q_20> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_15> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_15> <display/counter_r/M_ctr_q_15> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_21> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <logic/animation/counter_win/M_ctr_q_21> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_16> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_16> <display/counter_r/M_ctr_q_16> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_22> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <logic/animation/counter_win/M_ctr_q_22> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_17> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_17> <display/counter_r/M_ctr_q_17> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_23> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <logic/animation/counter_win/M_ctr_q_23> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_18> in Unit <mojo_top_0> is equivalent to the following 2 FFs/Latches, which will be removed : <logic/animation/counter_win/M_ctr_q_18> <display/counter_r/M_ctr_q_18> 
+INFO:Xst:2261 - The FF/Latch <logic/animation/counter_start/M_ctr_q_19> in Unit <mojo_top_0> is equivalent to the following FF/Latch, which will be removed : <logic/animation/counter_win/M_ctr_q_19> 
+INFO:Xst:2261 - The FF/Latch <logic/counter_check/M_ctr_q_0> in Unit <mojo_top_0> is equivalent to the following 3 FFs/Latches, which will be removed : <logic/animation/counter_start/M_ctr_q_0> <logic/animation/counter_win/M_ctr_q_0> <display/counter_r/M_ctr_q_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 34.
+FlipFlop logic/M_now_position_col_q_0 has been replicated 1 time(s)
+FlipFlop logic/M_now_position_col_q_1 has been replicated 1 time(s)
+FlipFlop logic/M_now_position_col_q_2 has been replicated 2 time(s)
+FlipFlop logic/M_now_position_row_q_0 has been replicated 2 time(s)
+FlipFlop logic/M_now_position_row_q_1 has been replicated 2 time(s)
+FlipFlop logic/M_round_number_q_0 has been replicated 1 time(s)
+FlipFlop logic/M_round_number_q_1 has been replicated 1 time(s)
+FlipFlop logic/M_round_number_q_2 has been replicated 1 time(s)
+FlipFlop logic/M_state_q_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop logic/M_state_q_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop logic/M_state_q_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop logic/M_state_q_FSM_FFd4 has been replicated 3 time(s)
+FlipFlop logic/M_state_q_FSM_FFd5 has been replicated 2 time(s)
+FlipFlop logic/animation/counter_start/M_ctr_q_1 has been replicated 3 time(s)
+FlipFlop logic/animation/counter_start/M_ctr_q_2 has been replicated 2 time(s)
+FlipFlop logic/counter_check/M_ctr_q_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <mojo_top_0> :
+	Found 2-bit shift register for signal <up_con/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <down_con/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <left_con/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <right_con/sync/M_pipe_q_1>.
+	Found 2-bit shift register for signal <reset_con/sync/M_pipe_q_1>.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reset_cond/M_stage_q_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL32 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <mojo_top_0> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 381
+ Flip-Flops                                            : 381
+# Shift Registers                                      : 5
+ 2-bit shift register                                  : 5
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 391   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 13.595ns (Maximum Frequency: 73.558MHz)
+   Minimum input arrival time before clock: 3.526ns
+   Maximum output required time after clock: 24.289ns
+   Maximum combinational path delay: No path found
+
+=========================================================================

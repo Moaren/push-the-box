@@ -1,0 +1,29 @@
+module timer (
+    input clk,  // clock
+    input rst,  // reset
+    output out[$clog2(199)],
+    input tozero
+
+  ) {
+    const TOP = 4999999; //0.1s
+    const SIZE = $clog2(TOP);
+    dff counter[SIZE] (.clk(clk),.rst(rst));
+    const TOP2 = 199;
+    const SIZE2 = $clog2(TOP2);
+    dff totalTime[SIZE2] (.clk(clk),.rst(rst));
+  always {
+    out = totalTime.q;
+    counter.d = counter.q + 1;
+    if (tozero) {
+      counter.d = 0;
+      totalTime.d = 0;
+    } else {
+      if(counter.q == 0) {
+        totalTime.d = totalTime.q + 1;
+      }
+      if (counter.q == TOP) {
+        counter.d = 0;
+      }
+    }
+  }
+}

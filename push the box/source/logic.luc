@@ -1,0 +1,257 @@
+module logic (
+    input clk,  // clock
+    input rst,  // reset
+    output outyellow[8][8],
+    output outred[8][8],
+    output outblue[8][8],
+    output outgreen[8][8],
+    input up,
+    input down,
+    input left,
+    input right,
+    input reset
+  ) {
+  
+  map map;
+  number number;
+  timer timer(.clk(clk),.rst(rst));
+  animation animation(.clk(clk),.rst(rst));
+  alu alu; // instantiate alu 
+
+  
+  dff box[8][8](.clk(clk), .rst(rst), #INIT(0));
+  dff destinations[8][8](.clk(clk), .rst(rst), #INIT(0));
+  dff map_boundary[8][8](.clk(clk), .rst(rst), #INIT(0));
+
+  dff round_number[3] (.clk(clk),.rst(rst), #INIT(0)); 
+
+
+  dff now_position_row[3](.clk(clk), .rst(rst), #INIT(3));
+  dff now_position_col[3](.clk(clk), .rst(rst), #INIT(3));
+  dff check_result[8][8](.clk(clk), .rst(rst), #INIT(0));
+  counter counter_check (.clk(clk),.rst(rst), #SIZE(3),#TOP(7));
+
+ 
+  
+
+  
+  sig start_row[3];
+  sig start_col[3];
+  sig bound_left[3];
+  sig bound_right[3];
+  sig bound_up[3];
+  sig bound_down[3];
+  
+  .clk(clk){
+    .rst(rst){
+      fsm state( #INIT(START)) = {START,RUNNING,TO_NEXT_ROUND,SHOWROUND,ROUND_START,FINALSUCCESS};
+    }
+  }
+  
+
+  always {
+    bound_left = map.bound_left;
+    bound_right = map.bound_right;
+    bound_up = map.bound_up;
+    bound_down = map.bound_down;
+    
+    //map.round_number = round_number.q;
+    map.round_number = 0;
+    number.output_number = round_number.q;
+
+    start_row = map.start_row;
+    start_col = map.start_col;
+    
+    outyellow = {b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000};
+    outred = {b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000};
+    outblue = {b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000};
+    outgreen = {b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000};
+    
+    timer.tozero = 0;
+    
+    alu.alufn = 6b000000; 
+    alu.a = 16b0; 
+    alu.b = 16b0;
+    
+    
+      
+   if (state.q == state.START) {
+    //Start of the whole game
+    round_number.d = 0;
+    outyellow = animation.out_start; //play start animation
+    if(reset){ //if reset button is pressed, enter the first round
+      state.d = state.SHOWROUND;
+      }
+    }
+
+     
+    if(state.q == state.TO_NEXT_ROUND){
+     //go to next round
+      alu.alufn = 6b000000; 
+      alu.a = round_number.q; 
+      alu.b = b01; 
+      round_number.d = alu.out; //ALU implementation: ADD
+      state.d = state.SHOWROUND;
+      }   
+        
+   if (state.q == state.SHOWROUND) {
+    //show the round n
+    alu.alufn = 6b110010;   //ALU implementation: COMPEQ
+    alu.a = round_number.q;
+    alu.b = 16b0110;
+    if(alu.out == 1){  //if round_number == 7£¬ the player has passed all the rounds and goto FINALSUCCESS state
+      state.d = state.FINALSUCCESS;
+      timer.tozero = 1;
+    }
+    else{
+      number.output_number = round_number.q + 1;
+      outyellow = number.number_map; //show the round number
+    if (timer.out == 15) {      //after 1.5 seconds, the round starts    
+      state.d = state.ROUND_START;
+      timer.tozero = 1;
+    }
+    else if(reset){ //if the reset button is pressed, the round starts directly
+      state.d = state.ROUND_START;
+      timer.tozero = 1;
+      }
+      }
+
+      }
+
+   
+    
+   if (state.q == state.ROUND_START) {
+        map.round_number = round_number.q;
+        box.d =  map.box;
+        destinations.d =  map.destinations; //load destinations
+        map_boundary.d = map.map_boundary; //load map
+        start_row = map.start_row; //load the person's position
+        start_col = map.start_col;
+        
+      
+        outred = map_boundary.q;
+        outblue = box.q;
+        outgreen = destinations.q;
+        state.d = state.RUNNING;
+        now_position_row.d = 7 - start_row;
+        now_position_col.d = 7 - start_col;
+        check_result.d = {b11111111,b11111111,b11111111,b11111111,b11111111,b11111111,b11111111,b11111111};
+      
+        }
+   
+   if(state.q == state.RUNNING){
+    if (up) {
+        if (now_position_row.q + 1 >= bound_up && map_boundary.q[now_position_row.q + 1][now_position_col.q] == 0 ) { 
+        //if the person does not collide with wall and screen boundary
+        if(box.q[now_position_row.q + 1][now_position_col.q] == 0){
+          //if the person does not walk aginst a box
+          now_position_row.d = now_position_row.q + 1;
+          outyellow[now_position_row.q][now_position_col.q] = 1;
+          outyellow[now_position_row.q - 1][now_position_col.q] = 0;
+            }
+        else{//if the person walks aginst a box
+          if (now_position_row.q + 2 >= bound_up && map_boundary.q[now_position_row.q + 2][now_position_col.q] == 0 && box.q[now_position_row.q + 2][now_position_col.q] == 0){
+            //if the box does not hit a wall or another box or the screen boundary
+            box.d[now_position_row.q + 1][now_position_col.q] = 0; //turn off original box position
+            box.d[now_position_row.q + 2][now_position_col.q] = 1; //light up new box position
+            now_position_row.d = now_position_row.q + 1;
+            outyellow[now_position_row.q][now_position_col.q] = 1;
+            outyellow[now_position_row.q - 1][now_position_col.q] = 0; 
+            }
+        }
+      }}
+    else if (down) { 
+        if (now_position_row.q - 1 <= bound_down && map_boundary.q[now_position_row.q - 1][now_position_col.q] == 0) {
+        if(box.q[now_position_row.q - 1][now_position_col.q] == 0){          
+          now_position_row.d = now_position_row.q - 1;
+          outyellow[now_position_row.q][now_position_col.q] = 1;
+          outyellow[now_position_row.q + 1][now_position_col.q] = 0;
+          }
+        else{
+          if (now_position_row.q -2 <= bound_down && map_boundary.q[now_position_row.q - 2][now_position_col.q] == 0 && box.q[now_position_row.q - 2][now_position_col.q] == 0){
+            box.d[now_position_row.q - 1][now_position_col.q] = 0;
+            box.d[now_position_row.q - 2][now_position_col.q] = 1;
+            now_position_row.d = now_position_row.q - 1;
+            outyellow[now_position_row.q][now_position_col.q] = 1;
+            outyellow[now_position_row.q + 1][now_position_col.q] = 0;
+            }
+        } 
+        }
+      }
+     else if (left) {
+        if (now_position_col.q - 1 >= bound_left && map_boundary.q[now_position_row.q ][now_position_col.q - 1] == 0) {
+        if(box.q[now_position_row.q][now_position_col.q - 1] == 0){          
+          now_position_col.d = now_position_col.q - 1;
+          outyellow[now_position_row.q][now_position_col.q] = 1;
+          outyellow[now_position_row.q][now_position_col.q + 1] = 0;
+          }
+       else{
+          if (now_position_row.q - 2 >= bound_left && map_boundary.q[now_position_row.q][now_position_col.q - 2] == 0 && box.q[now_position_row.q][now_position_col.q - 2] == 0){
+            box.d[now_position_row.q][now_position_col.q - 1] = 0;
+            box.d[now_position_row.q][now_position_col.q - 2] = 1;
+            now_position_col.d = now_position_col.q - 1;
+            outyellow[now_position_row.q][now_position_col.q] = 1;
+            outyellow[now_position_row.q][now_position_col.q + 1] = 0;
+            }
+        }
+        }
+      }
+
+     else if (right) {
+        if (now_position_col.q + 1 <= bound_right && map_boundary.q[now_position_row.q][now_position_col.q + 1] == 0) {
+        if(box.q[now_position_row.q][now_position_col.q + 1] == 0){             
+          now_position_col.d = now_position_col.q + 1;
+          outyellow[now_position_row.q][now_position_col.q] = 1;
+          outyellow[now_position_row.q][now_position_col.q - 1] = 0;
+          }
+        
+       else{
+          if (now_position_row.q + 2 <= bound_right && map_boundary.q[now_position_row.q][now_position_col.q + 2] == 0 && box.q[now_position_row.q][now_position_col.q + 2] == 0){
+            box.d[now_position_row.q][now_position_col.q + 1] = 0;
+            box.d[now_position_row.q][now_position_col.q + 2] = 1;
+            now_position_col.d = now_position_col.q + 1;
+            outyellow[now_position_row.q][now_position_col.q] = 1;
+            outyellow[now_position_row.q][now_position_col.q - 1] = 0;
+            }
+        }
+        }
+      }
+      
+    
+      
+    outred = map_boundary.q; //map boundary in bule
+    outblue = box.q; //box
+    outgreen = destinations.q; //destinations
+    outyellow[now_position_row.q][now_position_col.q] = 1; //person location
+      
+    if(reset){
+      round_number.d = round_number.q;
+      state.d = state.ROUND_START;   
+      }
+     
+    alu.alufn = 6b010110;  //ALU Implementation: XOR
+    alu.a = box.q[counter_check.value];
+    alu.b = destinations.q[counter_check.value];
+    check_result.d[counter_check.value] = alu.out; //check each row of the box and destinations matrix, see if they are the same
+      
+    if(check_result.q == {b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000,b00000000}){ 
+      //if all the boxes are in postion, which means the box matrix and destinations matrix is the same
+      timer.tozero = 1;
+      state.d = state.TO_NEXT_ROUND;
+      }
+      
+    
+     } 
+    if (state.q == state.FINALSUCCESS) {    
+        outyellow = animation.out_win; //play the win animation
+        if (reset) {          
+          state.d = state.START; // if reset button is pressed, start from round 1 again
+          timer.tozero = 1;
+        }
+     
+        
+    }     
+    
+    
+    }
+}   

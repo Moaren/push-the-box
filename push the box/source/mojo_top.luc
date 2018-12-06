@@ -1,0 +1,95 @@
+module mojo_top (
+    input clk,              // 50MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input cclk,             // configuration clock, AVR ready when high
+    output spi_miso,        // AVR SPI MISO
+    input spi_ss,           // AVR SPI Slave Select
+    input spi_mosi,         // AVR SPI MOSI
+    input spi_sck,          // AVR SPI Clock
+    output spi_channel [4], // AVR general purpose pins (used by default to select ADC channel)
+    input avr_tx,           // AVR TX (FPGA RX)
+    output avr_rx,          // AVR RX (FPGA TX)
+    input avr_rx_busy,       // AVR RX buffer full
+    output row[8],
+    output c_red[8],
+    output c_blue[8],
+    output c_green[8],
+    input up,
+    input down,
+    input left,
+    input right,
+    input reset
+
+
+  ) {
+  
+  sig rst;                  // reset signal
+  logic logic(.clk(clk),.rst(rst));
+  display display(.clk(clk),.rst(rst));
+
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+     button_conditioner up_con;
+    button_conditioner down_con;
+    button_conditioner left_con;
+    button_conditioner right_con;
+    button_conditioner reset_con;
+
+    //button_conditioner confirm_con;
+    edge_detector up_edge( #RISE(1), #FALL(0));
+    edge_detector down_edge( #RISE(1), #FALL(0));
+    edge_detector left_edge( #RISE(1), #FALL(0));
+    edge_detector right_edge( #RISE(1), #FALL(0));
+    edge_detector reset_edge( #RISE(1), #FALL(0));
+
+    //edge_detector confirm_edge( #RISE(1), #FALL(0));
+  }
+  
+  always {
+    reset_cond.in = ~rst_n; // input raw inverted reset signal
+    rst = reset_cond.out;   // conditioned reset
+    
+    up_con.in = up;
+    down_con.in = down;
+    left_con.in = left;
+    right_con.in = right;
+    reset_con.in = reset;
+    //confirm_con.in = confirm;
+    up_edge.in = up_con.out;
+    down_edge.in = down_con.out;
+    left_edge.in = left_con.out;
+    right_edge.in = right_con.out;
+    reset_edge.in = reset_con.out;
+    //confirm_edge.in = confirm_con.out;
+    logic.up = up_edge.out;
+    logic.down = down_edge.out;
+    logic.left = left_edge.out;
+    logic.right = right_edge.out;
+    logic.reset = reset_edge.out;
+    //logic.confirm = confirm_edge.out;
+    
+    display.red = logic.outred;
+    display.blue = logic.outblue;
+    display.green = logic.outgreen;
+    display.yellow = logic.outyellow;
+
+    row = display.row;
+    c_red = display.c_red;
+    c_blue = display.c_blue; 
+    c_green = display.c_green;
+    //logic.down = down; 
+    //logic.up = up; 
+    //logic.left = left; 
+    //logic.right = right; 
+
+    
+    led = 8h00;             // turn LEDs off
+    spi_miso = bz;          // not using SPI
+    spi_channel = bzzzz;    // not using flags
+    avr_rx = bz;            // not using serial port    
+  }
+}

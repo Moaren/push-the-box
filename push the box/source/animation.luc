@@ -1,0 +1,41 @@
+module animation (
+    input clk,  // clock
+    input rst,  // reset
+    output out_start[8][8],
+    output out_win[8][8]
+  ) {
+  
+  sig start[8][33];
+  sig win[8][29];
+  const FLIP = 24;
+  counter counter_start (.clk(clk),.rst(rst), #SIZE($clog2(32)),#TOP(32),#DIV(FLIP));
+  counter counter_win (.clk(clk),.rst(rst), #SIZE($clog2(28)),#TOP(28),#DIV(FLIP));
+  var i; 
+  always {
+    start = {
+          b000000000000000000000000000000000,
+          b000100001101000100010001000011110,
+          b000100000101000100010001000010000,
+          b000100000011000111110001000011000,
+          b000100000111000100010001000000100,
+          b000100001001000010100001000000010,
+          b000100001001000010100001000000010,
+          b011111000111000001000111110011100 };
+      
+      win = {
+          b00011000000001110000001110000,
+          b00111100010001001000001001000,
+          b01111110000001000100001000100,
+          b11111111010111110010111110010,
+          b11111111010000000010000000010,
+          b11111111010000000100000000100,
+          b01100110010000001000000001000,
+          b00000000000001110000001110000
+          };
+      
+    for (i = 0; i < 8; i++){
+      out_start[i] = start[i] >> counter_start.value| start[i]<<(33 - counter_start.value);
+      out_win[i] =  win[i] >> counter_win.value | win[i] <<(29- counter_win.value);
+    }
+  }
+}

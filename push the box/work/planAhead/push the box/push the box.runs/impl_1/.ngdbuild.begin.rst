@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="ngdbuild" Owner="LENOVO" Host="LAPTOP-TPKKPN28" Pid="3580">
+    </Process>
+</ProcessHandle>
